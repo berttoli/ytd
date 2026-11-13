@@ -1,0 +1,14 @@
+[project]
+name = "ytd"
+version = "0.1.0"
+description = "YouTube CLI Handler w/ Defaults"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "yt-dlp==2026.8.19",
+]
+
+[project.optional-dependencies]
+transcription = [
+    "faster-whisper>=1.2.1",
+]

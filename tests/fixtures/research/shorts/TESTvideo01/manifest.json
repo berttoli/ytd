@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "video_id": "TESTvideo01",
+  "output_directory": "research/shorts/TESTvideo01",
+  "generated": [
+    "README.md",
+    "manifest.json",
+    "analysis.json",
+    "transcript.json",
+    "summary.md",
+    "agent-prompt.md",
+    "subtitles.vtt"
+  ],
+  "downstream_pending": [
+    "semantic-summary.md",
+    "implementation-plan.md",
+    "codex-prompt.md",
+    "knowledge.json",
+    "verification.md"
+  ],
+  "downstream_reason": "These require a separate analysis-agent and verification pass; this CLI does not invent semantic or fact-checked content.",
+  "media_errors": [],
+  "article_agent": {
+    "requested": false,
+    "status": "not_requested",
+    "errors": []
+  }
+}

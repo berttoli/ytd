@@ -1,0 +1,103 @@
+{
+  "video_id": "TESTvideo01",
+  "url": "https://www.youtube.com/watch?v=TESTvideo01",
+  "source": "synthetic_fixture",
+  "segments": [
+    {
+      "start": 1.0,
+      "duration": 3.0,
+      "text": "Welcome to this synthetic test clip about running agents safely."
+    },
+    {
+      "start": 4.0,
+      "duration": 3.0,
+      "text": "Everything said here was written for the test suite."
+    },
+    {
+      "start": 7.0,
+      "duration": 3.0,
+      "text": "First we install the tools and configure a sandbox for the agent."
+    },
+    {
+      "start": 10.0,
+      "duration": 3.0,
+      "text": "The sandbox has no outbound network access by default."
+    },
+    {
+      "start": 14.0,
+      "duration": 3.0,
+      "text": "Next we run a small task and measure how long it takes."
+    },
+    {
+      "start": 17.0,
+      "duration": 3.0,
+      "text": "The agent reads files, edits one of them, and reports back."
+    },
+    {
+      "start": 20.0,
+      "duration": 3.0,
+      "text": "You should verify the result before you trust the report."
+    },
+    {
+      "start": 23.0,
+      "duration": 3.0,
+      "text": "To create the project folder, run git clone on the example repository."
+    },
+    {
+      "start": 27.0,
+      "duration": 3.0,
+      "text": "Then start the agent inside that folder."
+    },
+    {
+      "start": 32.0,
+      "duration": 3.0,
+      "text": "A second agent can review the first agent's change."
+    },
+    {
+      "start": 40.0,
+      "duration": 3.0,
+      "text": "Keep the two agents on separate files so they do not overwrite each other."
+    },
+    {
+      "start": 52.0,
+      "duration": 3.0,
+      "text": "Write decisions down in a short work log."
+    },
+    {
+      "start": 64.0,
+      "duration": 3.0,
+      "text": "After a long session, read the work log before continuing."
+    },
+    {
+      "start": 75.0,
+      "duration": 3.0,
+      "text": "Now for the part that surprised us during testing."
+    },
+    {
+      "start": 86.0,
+      "duration": 3.0,
+      "text": "The reasoning the agent printed did not always match the action it took."
+    },
+    {
+      "start": 95.0,
+      "duration": 3.0,
+      "text": "So we check actions, not explanations."
+    },
+    {
+      "start": 104.0,
+      "duration": 3.0,
+      "text": "That is why the sandbox blocks the network unless you enable it."
+    },
+    {
+      "start": 113.0,
+      "duration": 3.0,
+      "text": "Test your own setup the same way before you deploy it."
+    },
+    {
+      "start": 120.0,
+      "duration": 3.0,
+      "text": "Thanks for watching this synthetic clip."
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0",
+  "video_id": "TESTvideo01",
+  "url": "https://www.youtube.com/watch?v=TESTvideo01",
+  "requested_start_seconds": 0,
+  "metadata": {
+    "title": "Synthetic test clip: running agents in a sandbox",
+    "uploader": "Example Channel",
+    "channel": "Example Channel",
+    "description": "A made-up description for tests. https://example.com/docs",
+    "duration": 127,
+    "upload_date": "20260101",
+    "webpage_url": "https://www.youtube.com/watch?v=TESTvideo01"
+  },
+  "chapters": [],
+  "resources": [
+    "https://example.com/docs"
+  ],
+  "retrieval": {
+    "transcript_source": "synthetic_fixture",
+    "segments": 19,
+    "status": "ok",
+    "errors": []
+  },
+  "statistics": {
+    "words": 165,
+    "top_terms": [
+      [
+        "agent",
+        5
+      ],
+      [
+        "test",
+        3
+      ],
+      [
+        "sandbox",
+        3
+      ],
+      [
+        "before",
+        3
+      ],
+      [
+        "synthetic",
+        2
+      ],
+      [
+        "clip",
+        2
+      ],
+      [
+        "agents",
+        2
+      ],
+      [
+        "first",
+        2
+      ],
+      [
+        "network",
+        2
+      ],
+      [
+        "run",
+        2
+      ],
+      [
+        "long",
+        2
+      ],
+      [
+        "files",
+        2
+      ],
+      [
+        "folder",
+        2
+      ],
+      [
+        "work",
+        2
+      ],
+      [
+        "log",
+        2
+      ],
+      [
+        "welcome",
+        1
+      ],
+      [
+        "running",
+        1
+      ],
+      [
+        "safely",
+        1
+      ]
+    ]
+  },
+  "candidate_actions": [
+    {
+      "timestamp": "00:01",
+      "seconds": 1.0,
+      "text": "Welcome to this synthetic test clip about running agents safely.",
+      "url": "https://youtu.be/TESTvideo01?t=1"
+    },
+    {
+      "timestamp": "00:04",
+      "seconds": 4.0,
+      "text": "Everything said here was written for the test suite.",
+      "url": "https://youtu.be/TESTvideo01?t=4"
+    },
+    {
+      "timestamp": "00:07",
+      "seconds": 7.0,
+      "text": "First we install the tools and configure a sandbox for the agent.",
+      "url": "https://youtu.be/TESTvideo01?t=7"
+    },
+    {
+      "timestamp": "00:14",
+      "seconds": 14.0,
+      "text": "Next we run a small task and measure how long it takes.",
+      "url": "https://youtu.be/TESTvideo01?t=14"
+    },
+    {
+      "timestamp": "00:20",
+      "seconds": 20.0,
+      "text": "You should verify the result before you trust the report.",
+      "url": "https://youtu.be/TESTvideo01?t=20"
+    },
+    {
+      "timestamp": "00:23",
+      "seconds": 23.0,
+      "text": "To create the project folder, run git clone on the example repository.",
+      "url": "https://youtu.be/TESTvideo01?t=23"
+    },
+    {
+      "timestamp": "00:27",
+      "seconds": 27.0,
+      "text": "Then start the agent inside that folder.",
+      "url": "https://youtu.be/TESTvideo01?t=27"
+    },
+    {
+      "timestamp": "01:44",
+      "seconds": 104.0,
+      "text": "That is why the sandbox blocks the network unless you enable it.",
+      "url": "https://youtu.be/TESTvideo01?t=104"
+    },
+    {
+      "timestamp": "01:53",
+      "seconds": 113.0,
+      "text": "Test your own setup the same way before you deploy it.",
+      "url": "https://youtu.be/TESTvideo01?t=113"
+    }
+  ],
+  "candidate_commands": [
+    {
+      "timestamp": "00:23",
+      "candidate": "git clone on the example repository.",
+      "verified": false
+    }
+  ],
+  "segments": [
+    {
+      "start": 1.0,
+      "duration": 3.0,
+      "text": "Welcome to this synthetic test clip about running agents safely."
+    },
+    {
+      "start": 4.0,
+      "duration": 3.0,
+      "text": "Everything said here was written for the test suite."
+    },
+    {
+      "start": 7.0,
+      "duration": 3.0,
+      "text": "First we install the tools and configure a sandbox for the agent."
+    },
+    {
+      "start": 10.0,
+      "duration": 3.0,
+      "text": "The sandbox has no outbound network access by default."
+    },
+    {
+      "start": 14.0,
+      "duration": 3.0,
+      "text": "Next we run a small task and measure how long it takes."
+    },
+    {
+      "start": 17.0,
+      "duration": 3.0,
+      "text": "The agent reads files, edits one of them, and reports back."
+    },
+    {
+      "start": 20.0,
+      "duration": 3.0,
+      "text": "You should verify the result before you trust the report."
+    },
+    {
+      "start": 23.0,
+      "duration": 3.0,
+      "text": "To create the project folder, run git clone on the example repository."
+    },
+    {
+      "start": 27.0,
+      "duration": 3.0,
+      "text": "Then start the agent inside that folder."
+    },
+    {
+      "start": 32.0,
+      "duration": 3.0,
+      "text": "A second agent can review the first agent's change."
+    },
+    {
+      "start": 40.0,
+      "duration": 3.0,
+      "text": "Keep the two agents on separate files so they do not overwrite each other."
+    },
+    {
+      "start": 52.0,
+      "duration": 3.0,
+      "text": "Write decisions down in a short work log."
+    },
+    {
+      "start": 64.0,
+      "duration": 3.0,
+      "text": "After a long session, read the work log before continuing."
+    },
+    {
+      "start": 75.0,
+      "duration": 3.0,
+      "text": "Now for the part that surprised us during testing."
+    },
+    {
+      "start": 86.0,
+      "duration": 3.0,
+      "text": "The reasoning the agent printed did not always match the action it took."
+    },
+    {
+      "start": 95.0,
+      "duration": 3.0,
+      "text": "So we check actions, not explanations."
+    },
+    {
+      "start": 104.0,
+      "duration": 3.0,
+      "text": "That is why the sandbox blocks the network unless you enable it."
+    },
+    {
+      "start": 113.0,
+      "duration": 3.0,
+      "text": "Test your own setup the same way before you deploy it."
+    },
+    {
+      "start": 120.0,
+      "duration": 3.0,
+      "text": "Thanks for watching this synthetic clip."
+    }
+  ],
+  "analysis_status": "extractive_only_not_llm_verified",
+  "notice": "Candidate actions and commands are detected automatically; they are not independently verified implementation instructions."
+}

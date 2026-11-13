@@ -1,0 +1,16 @@
+#!/bin/sh
+# Global launcher for ytd. Symlink this file onto PATH (e.g. ~/.local/bin/ytd);
+# it finds the repo through the symlink, so it works from any directory.
+self="$0"
+while [ -L "$self" ]; do
+  target="$(readlink "$self")"
+  case "$target" in
+    /*) self="$target" ;;
+    *) self="$(dirname "$self")/$target" ;;
+  esac
+done
+root="$(cd "$(dirname "$self")/.." && pwd)"
+if [ -x "$root/.venv/bin/python" ]; then
+  exec "$root/.venv/bin/python" "$root/main.py" "$@"
+fi
+exec uv run --project "$root" python "$root/main.py" "$@"

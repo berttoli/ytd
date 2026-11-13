@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  # daily.yml runs the same suite on a schedule
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Python · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # The runner's own Python (3.11 or newer). Nothing is installed: the suite uses only the
+      # standard library and an invented digest under tests/fixtures, and makes no network calls.
+      - name: Python version
+        run: python3 -c "import sys; print(sys.version); assert sys.version_info >= (3, 11)"
+      - name: Compile every module
+        run: python3 -m py_compile main.py youtube_digest.py shows.py video_chunks.py mp4_conversion.py ytd_library/*.py
+      - name: Unit tests (offline)
+        run: python3 -m unittest discover -s tests -v
+      - name: Launcher is valid shell
+        run: sh -n bin/ytd

@@ -1,0 +1,39 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+
+# everything ytd produces at run time stays out of git
+/research/
+/library/
+/catalog/
+/youtube-output/
+/downloads/
+/outputs/
+/context.md
+/picks.json
+*.log
+
+# media
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.m4a
+*.webm
+*.opus
+*.mkv
+
+# credentials and browser data
+.env
+.env.*
+cookies.txt
+*cookies*.txt
+*.pem
+*.key
+
+# local, machine-specific files
+.claude/
+HANDOFF.md
